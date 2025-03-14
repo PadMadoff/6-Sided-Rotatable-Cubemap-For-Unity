@@ -4,7 +4,7 @@ Shader "Skybox/6 Sided Rotate"
     {
         _Tint ("Tint Color", Color) = (.5, .5, .5, .5)
         [Gamma] _Exposure ("Exposure", Range(0, 8)) = 1.0
-        _RotationVector ("Rotation Vector", Vector) = (0, 0, 0, 0) // Вектор ротации
+        _RotationVector ("Rotation Vector", Vector) = (0, 0, 0, 0)
         [NoScaleOffset] _FrontTex ("Front [+Z]   (HDR)", 2D) = "grey" {}
         [NoScaleOffset] _BackTex ("Back [-Z]   (HDR)", 2D) = "grey" {}
         [NoScaleOffset] _LeftTex ("Left [+X]   (HDR)", 2D) = "grey" {}
@@ -22,7 +22,7 @@ Shader "Skybox/6 Sided Rotate"
 
         half4 _Tint;
         half _Exposure;
-        float4 _RotationVector; // Вектор ротации
+        float4 _RotationVector;
 
         float3 RotateAroundYInDegrees(float3 vertex, float degrees)
         {
@@ -60,9 +60,8 @@ Shader "Skybox/6 Sided Rotate"
             UNITY_SETUP_INSTANCE_ID(v);
             UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
 
-            // Применяем ротацию по обоим осям
-            float3 rotated = RotateAroundYInDegrees(v.vertex, _RotationVector.x); // Ротация по Y
-            rotated = RotateAroundXInDegrees(rotated, _RotationVector.y); // Ротация по X
+            float3 rotated = RotateAroundYInDegrees(v.vertex, _RotationVector.x);
+            rotated = RotateAroundXInDegrees(rotated, _RotationVector.y);
 
             o.vertex = UnityObjectToClipPos(rotated);
             o.texcoord = v.texcoord;
