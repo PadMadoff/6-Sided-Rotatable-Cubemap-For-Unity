@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Space_TO
+  m_Shader: {fileID: 4800000, guid: 260ac18c0d66f40488a04d1b8fd52604, type: 3}
+  m_ShaderKeywords: _SUNDISK_HIGH_QUALITY
+  m_LightmapFlags: 0
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BackTex:
+        m_Texture: {fileID: 2800000, guid: a93813ace423ba447b2975577717ad9c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DownTex:
+        m_Texture: {fileID: 2800000, guid: 9f159e2653c7c59418fbce7296c26d13, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FrontTex:
+        m_Texture: {fileID: 2800000, guid: 11d6963a4c3acd74290907635e3820d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LeftTex:
+        m_Texture: {fileID: 2800000, guid: 6d3d8aa24af10754e8dd1948d22f68a6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _RightTex:
+        m_Texture: {fileID: 2800000, guid: 26002a694201a604e97d291abdb5394c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tex:
+        m_Texture: {fileID: 8900000, guid: 409682d351654264eb2c3aa3aceb13f0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UpTex:
+        m_Texture: {fileID: 2800000, guid: 6b7de181ab6270f448081c638dc2d62e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AtmosphereThickness: 1
+    - _Exposure: 1
+    - _ImageType: 0
+    - _Layout: 0
+    - _Mapping: 1
+    - _MirrorOnBack: 0
+    - _Range: 0.01
+    - _Rotation: 464.66
+    - _SunDisk: 2
+    - _SunSize: 0.04
+    - _SunSizeConvergence: 5
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _GroundColor: {r: 0.369, g: 0.349, b: 0.341, a: 1}
+    - _PatCol: {r: 1, g: 1, b: 1, a: 1}
+    - _RotationVector: {r: 90, g: 0, b: 0, a: 0}
+    - _SkyTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+  m_BuildTextureStacks: []
